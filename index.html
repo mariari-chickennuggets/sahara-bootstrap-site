@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sahara Desert</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Lora', serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav a {
+            color: white !important;
+        }
+
+        .milky-way-section {
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/006/117/740/original/amazing-milky-way-over-the-dunes-erg-chebbi-in-the-sahara-desert-video.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            margin-top: 70px;
+        }
+
+        .info-section {
+                padding: 50px 0;
+            }
+
+        .toggle-dark-mode {
+            border: none;
+            background: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        body.dark-mode {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sahara Desert</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#historical-sites">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stay">Where to Stay</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eat">Where to Eat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#travel">Travel</a></li>
+                </ul>
+                <button class="toggle-dark-mode" onclick="toggleDarkMode()">🌓</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="milky-way-section" id="milkyway">
+        <div class="container">
+            <h1>Experience the Milky Way in the Sahara Desert</h1>
+            <p>Witness breathtaking views of the galaxy in one of the clearest night skies on Earth.</p>
+        </div>
+    </section>
+
+    <section class="info-section" id="historical-sites">
+        <div class="container">
+            <h2>Historical Highlights of the Sahara</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://live.staticflickr.com/65535/50614031542_1aeaac532a_b.jpg" class="card-img-top"
+                            alt="Douz">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color: #8B4513;">Douz - The Gateway to the Sahara</h5>
+                            <p class="card-text">Douz is an ancient town known for its Sahara Festival, which has
+                                celebrated the culture of desert life since the 1910s.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="douz-details.html" class="btn btn-primary"
+                                style="background-color: #FF6347; border-color: #FF6347;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://lh3.googleusercontent.com/-VWNCJUgjhbs/WSPX64Iy3vI/AAAAAAABSqg/ZGid_8tim4QDVOd6fEIJznvPJmu8YPOQQCHM/matmata-tunisia-86?imgmax=1600"
+                            class="card-img-top" alt="Matmata">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color: #8B4513;">Matmata - Underground Dwellings</h5>
+                            <p class="card-text">Famous for its troglodyte homes, Matmata is where Berber people have
+                                lived for centuries, and it was featured in the Star Wars films.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="matmata-details.html" class="btn btn-primary"
+                                style="background-color: #FF6347; border-color: #FF6347;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://i.pinimg.com/originals/a8/3a/82/a83a82f3bbc72b45bf7b40f67ba83585.jpg"
+                            class="card-img-top" alt="Ksar Ouled Soltane">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color: #8B4513;">Ksar Ouled Soltane - Ancient Granary</h5>
+                            <p class="card-text">Ksar Ouled Soltane is a historic granary with unique architecture used
+                                to store grain by the desert’s early inhabitants.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="ksar-ouled-soltane-details.html" class="btn btn-primary"
+                                style="background-color: #FF6347; border-color: #FF6347;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="inspiration">
+        <div class="container">
+            <h2>Why Sahara Desert</h2>
+            <p>Ever since I read the book <em>The Alchemist</em> by Paulo Coelho, I’ve always wondered what it would be
+                like to experience the desert. The contrasting extremes of heat during the day and the cold at night
+                seem fascinating. But more than that, I’m drawn to the idea of seeing the Milky Way in all its glory
+                against the vast, open sky.</p>
+            <p>I’m creating this website not just to share information, but because I want to know more about the Sahara
+                Desert myself. I plan on visiting one day, and I believe it will be a life-changing experience.</p>
+        </div>
+    </section>
+
+    <section class="info-section" id="stay">
+        <div class="container">
+            <h2>Where to Stay in the Sahara Desert</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://www.voyageursdumonde.fr/vdm/imgProduits/TUN/276457.ori.jpg"
+                            class="card-img-top" alt="Dar Hi Life">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color: #8B4513">Hotel Dar Hi</h5>
+                            <p class="card-text">Dar Hi is a design hotel 1 minutes’ walk from Nefta’s palmgroves in
+                                southern Tunisia. A natural hot spring heats the outdoor swimming pool and guests can
+                                enjoy a hammam and spa treatments on site.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://www.booking.com/hotel/tn/dar-hi.html?aid=1181029&label=msn-8QYA_ZKUdfgdWYgWhnGjlQ-79852223638307%3Atidat-2331651846083082%3Aloc-149%3Aneo%3Amtb%3Alp152991%3Adec%3AqsDar%20Hi%20Life%20-%20Eco-lodge%20in%20Nefta&sid=7b7c7211c443fe3d0afffdb40792674b&dest_id=-727592;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1729181074;srpvid=e19c70f8970a051f;type=total;ucfs=1&"
+                                class="btn btn-primary" style="background-color: #FF6347; border-color: #FF6347;">Book
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://www.mouhoudesertcamp.com/wp-content/uploads/2022/04/Merzouga-Luxury-Desert-Camp-1.jpg"
+                            class="card-img-top" alt="Camp Mars">
+                        <div class="card-body" style="background-color: #fff5e1;">
+                            <h5 class="card-title" style="color: #8B4513">Merzouga Luxury Desert Camps</h5>
+                            <p class="card-text">Merzuga luxury desert camps, located an hour and half drive from
+                                Erfoud. Enjoy your special night under the stars at this beautiful Oasis in a premium
+                                tented camp. </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://www.merzougaluxurydesertcamps.com/" class="btn btn-primary"
+                                style="background-color: #FF6347; border-color: #FF6347;">Book now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/492921735.jpg?k=1547f7c1cc418e934c21379cd0b0029302397bab421fcf3a64086723ccfbdb2f&o=&hp=1"
+                            class="card-img-top" alt="Hotel Sahara Douz">
+                        <div class="card-body" style="background-color: #fff5e1;">
+                            <h5 class="card-title" style="color: #8b4513">The Residence Douz</h5>
+                            <p class="card-text">Be transported to a land of enchantment at The Residence Douz, bringing
+                                a new luxury resort concept to southern Tunisia at the gateway to the Sahara Desert.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://www.cenizaro.com/theresidence/tunis-dz#" class="btn btn-primary"
+                                style="background-color:#ff6347; border-color: #ff6347;">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="eat">
+        <div class="container">
+            <h2>Where to Eat in the Sahara Desert</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/7c/b2/01/terrasses.jpg?w=600&h=400&s=1"
+                            class="card-img-top" alt="Chez Aicha">
+                        <div class="card-body" style="background-color: #fff5e1;">
+                            <h5 class="card-title" style="color: #8b4513">Chez Aicha</h5>
+                            <p class="card-text">Experience the rich flavors of Tunisia at Chez Aicha, located in the
+                                heart of Safi, Morocco.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g580100-d14979577-Reviews-Restaurant_Chez_Aicha-Safi_Marrakech_Safi.html"
+                                class="btn btn-primary" style="background-color: #ff6347; border-color: #FF6347;">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://th.bing.com/th/id/OIP.Zn2JGlCyT8Zb-q30cc67WAHaE6?rs=1&pid=ImgDetMain"
+                            class="card-img-top" alt="La Kasbah">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color: #8b4513">La Kasbah</h5>
+                            <p class="card-text">Can you tell the difference between ordinary Moroccan food and
+                                excellent Moroccan food?</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://lakasbahresto.be/en" class="btn btn-primary"
+                                style="background-color:#ff6347; border-color: #FF6347;"> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="transition: transform 0.3s;">
+                        <img src="https://github.com/mariari-chickennuggets/sahara-bootstrap-site/blob/main/cafenora.jpg?raw=true"
+                            class="card-img-top" alt="Restaurant Cafe Nora">
+                        <div class="card-body" style="background-color: #FFF5E1;">
+                            <h5 class="card-title" style="color:#8b4513">Restaurant Cafe Nora</h5>
+                            <p class="card-text">Known for its delicious Moroccan cuisine, including tagines and
+                                couscous, this restaurant offers a cozy atmosphere with stunning views of the Erg Chebbi
+                                dunes.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://www.tripadvisor.com.au/Restaurant_Review-g304017-d3296274-Reviews-Restaurant_Cafe_NORA-Merzouga_Draa_Tafilalet.html"
+                                class="btn btn-primary" style="background-color:#ff6347; border-color: #FF6347;">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="travel">
+        <div class="container">
+            <h2>Travelling Sahara</h2>
+            <p>A journey into the Sahara can be as varied as the desert itself, but there are some quintessential
+                experiences. Most begin in the gateway towns where expeditions out into the desert are organised. Often
+                oases, these towns are centres of Saharan culture, places where the architecture emerges naturally from
+                the earth and the slow pace of life has changed little in centuries. For exploring beyond town or
+                village limits, there are two major means of getting around. A slow march across the sands astride a
+                camel re-enacts the great camel caravans of Saharan lore – on a camel safari, travellers slow down to a
+                pace well suited to the Sahara’s unforgiving climate, allowing you to appreciate details and pass
+                through this spectacular terrain at one with your surroundings. In a 4WD expedition, travellers can
+                range further, stirring up the sand as you tick off a list of iconic Saharan landscapes.
+
+                Sleeping between four walls is an experience that ends in the towns. Out amid the sands or remote
+                Saharan mountains, evenings are spent around a campfire, and a soft bed of sand is the night-time
+                mattress of choice. Most Saharan excursions carry tents, but many travellers prefer to sleep outdoors
+                beneath the clearest show of stars on earth.</p>
+            <blockquote class style="font-family: 'Lora', serif" blockquote>
+                "The Sahara at night is like stepping into another world. The Milky Way stretches endlessly, and it
+                feels like you can touch the stars."
+            </blockquote>
+            <h3>Local Legends</h3>
+            <p>The Tuareg people, known as the 'Blue Men of the Sahara', have lived in the desert for centuries. Their
+                stories of survival, trade, and navigating the vast sands have been passed down through generations.</p>
+        </div>
+    </section>
+
+    <section class="info-section" id="map">
+        <div class="container">
+            <h2>Map of Key Locations</h2>
+            <div id="map-container" style="height: 400px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25697.82974601501!2d10.10149661554575!3d33.45690597860101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1252fecd6789abc1%3A0x3bce4d122345678!2sSahara%20Desert%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1679612936787!5m2!1sen!2sus"
+                    style="width:100%; height:100%;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4" style="color: #B8860B;">Essential Sahara Travel Tips</h1>
+            <p class="lead" style="color: #A0522D;">Your guide to surviving and thriving in the desert.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body" style="border-radius: 8px;">
+                        <h3 class="card-title mb-3" style="color: #8B4513;">Packing Essentials</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-sun-fill" style="color: #FFD700;"></i> <strong>Sun Protection:</strong>
+                                Wide-brimmed hat, sunscreen (SPF 50+), sunglasses.</li>
+                            <li><i class="bi bi-thermometer-half" style="color: #FF6347;"></i> <strong>Light, Loose
+                                    Clothing:</strong> Breathable fabrics like cotton to stay cool.</li>
+                            <li><i class="bi bi-droplet-fill" style="color: #1E90FF;"></i> <strong>Water
+                                    Supply:</strong> Carry at least 2 liters of water per person, per day.</li>
+                            <li><i class="bi bi-backpack" style="color: #32CD32;"></i> <strong>Desert Footwear:</strong>
+                                Comfortable, closed shoes to protect from hot sand.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body" style="border-radius: 8px;">
+                        <h3 class="card-title mb-3" style="color: #8B4513;">Pro Travel Tips</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-compass-fill" style="color: #FFD700;"></i> <strong>Use a Local
+                                    Guide:</strong> They know the safest routes and hidden gems.</li>
+                            <li><i class="bi bi-brightness-high-fill" style="color: #FF6347;"></i> <strong>Hydration is
+                                    Key:</strong> Drink regularly, even if you don’t feel thirsty.</li>
+                            <li><i class="bi bi-stars" style="color: #1E90FF;"></i> <strong>Stargazing:</strong> The
+                                Sahara offers incredible night skies. Bring a telescope if possible.</li>
+                            <li><i class="bi bi-binoculars-fill" style="color: #32CD32;"></i> <strong>Stay
+                                    Alert:</strong> Watch for weather changes, particularly sandstorms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-body" style=" border-left: 5px solid #FF4500;">
+                        <h3 class="card-title mb-3" style="color: #8B0000;">Safety & Health Tips</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-umbrella-fill" style="color: #FFD700;"></i> <strong>Avoid
+                                    Overexposure:</strong> Take regular breaks in the shade to avoid heatstroke.</li>
+                            <li><i class="bi bi-hospital-fill" style="color: #FF6347;"></i> <strong>First-Aid
+                                    Kit:</strong> Always have a basic first-aid kit for minor injuries or ailments.</li>
+                            <li><i class="bi bi-shield-fill-check" style="color: #1E90FF;"></i> <strong>Travel
+                                    Insurance:</strong> Ensure your insurance covers desert treks.</li>
+                            <li><i class="bi bi-hourglass-split" style="color: #32CD32;"></i> <strong>Time Your
+                                    Travel:</strong> Avoid traveling during peak heat hours (12-4 PM).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-dark pt-4 pb-2">
+            <div class="container">
+                <h5 class="text-center">Additional Resources</h5>
+                <ul class="list-unstyled text-center">
+                    <li><a href="https://www.journeybeyondtravel.com/blog/questions-about-visiting-sahara-desert.html#:~:text=What%20is%20there%20to%20do%20when%20you%E2%80%99re%20visiting,astronomy%20of%20its%20nomadic%20people%20is%20highly%20rewarding." class="text-dark">Travel Tips</a></li>
+                    <li><a href="https://afktravel.com/67431/15-impressive-historical-sites-sahara/" class="text-dark">Historical Sites</a></li>
+                    <li><a href="https://www.vedantu.com/geography/the-hot-desert-sahara" class="text-dark">Cultural Information</a></li>
+                    <li><a href="local-guides.html" class="text-dark">Local Guides</a></li>
+                    <li><a href="desert-safety.html" class="text-dark">Desert Safety Tips</a></li>
+                    <li><a href="desert-safety.html" class="text-dark"><i class="bi bi-heart"></i> Fund my dream, maybe?</a></li>
+
+                </ul>
+
+            </div>
+        </footer>
+
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
